@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/2c49ac9e63.js" crossorigin="anonymous"></script>
+
+        <!-- Script is used to import the font from website -->
+
+        <link href="../css/styles.css" rel="stylesheet">
+
+        <title>Barter Foundation</title>
+
+    </head>
+
+    <body>
+      
+    <div class="wrapper">
+
+        <header>
+            <section class="navbar">
+            <div>
+                <img id="mobilelogo" src="../images/mobile-logo.png" alt="Barter Foundation Logo">
+            
+            
+                <img id="desktoplogo" src="../images/desktop-logo.png" alt="Barter Foundation Logo">
+            </div>
+          
+            <nav class="desktop">
+  
+          <!-- Class "desktop" is used to specify the class for desktop. -->
+  
+              <ul>
+                  <a href="../index.html"><li>Home</li></a>
+                  <a href="../html/projects.html"><li>Projects</li></a>
+                  <a href="../html/about.html"><li>About Us</li></a>
+                  <a href="../html/volunteer.html"><li>Volunteer</li></a>
+                  <a href="#"><li>Contact Us</li></a>
+              </ul>
+            </nav>
+        
+            
+              <nav class="mobile"> 
+                
+                <!-- Class "desktop" is used to specify the class for mobile. -->
+                
+                
+              <button class="button"><a id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></a></button>
+  
+                <!-- Button is used here for the hamburger icon -->
+  
+                <ul id="mobilemenu" class="topnav">
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../html/projects.html"><li>Projects</li></a>
+                    <a href="../html/about.html"><li>About Us</li></a>
+                    <a href="../html/volunteer.html"><li>Volunteer</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+              </nav> 
+            </section>
+          </header>
+
+
+
+        <main class="contactmainbox">
+
+        
+            <div>
+                <img class="ctnimg" src="../images/contact.jpg" alt="Photo of a Volunteer">
+            </div>
+            
+            <div>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                <input type="text, number" id="email" name="email" placeholder="username@yahoo.com"><br>
+                <input type="text" id="contact" name="contact" placeholder="888 888 8888"><br>
+                <textarea id="msg" name="msg" placeholder="Write your message here."></textarea><br>
+                <div>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">I would like to recieve mails.</label>
+                </div>
+            </form>
+
+            <button id="cbtn" class="hbtn"><a href="#">Submit</a></button>
+            </div>
+
+        </main>
+
+        <footer>
+            <p class="footertext">&copy; 2023 ALL RIGHTS RESERVED. BARTER FOUNDATION.</p>
+        </footer>
+
+    </div>
+    <script src="../js/scripts.js"></script>
+    </body>
+
+</html>
+        

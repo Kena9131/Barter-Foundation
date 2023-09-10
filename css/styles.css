@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Cinzel&family=Comfortaa&family=Dancing+Script&family=Josefin+Slab&family=Lato:ital,wght@0,300;0,900;1,300&family=Lobster&family=Marcellus+SC&family=Montserrat:ital,wght@1,200;1,300&family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+html{
+    background-color: #f8f6f7;
+}
+
+/* Desktop Navigation */
+
+.desktop ul{
+    display: none;
+    justify-content: center;
+    list-style: none;
+    background-color: #254d32;
+    padding: 0;
+}
+
+.desktop ul li{
+    display: flex;
+    width: 8rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #254d32;
+}
+
+.desktop ul a{
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    border-right: 3px solid white;
+}
+
+.desktop ul a:last-child{
+    border-right: none;
+}
+
+.desktop ul li:hover{
+    box-shadow: 2px 2px 10px black inset;
+}
+
+/* Mobile Navigation */
+
+
+.mobile ul{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    background-color: #254d32;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+}
+
+.mobile ul li{
+    display: flex;
+    width: 8rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile ul a{
+    font-family: Montserrat;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile ul a:hover{
+    box-shadow: 2px 2px 10px black inset;
+}
+
+.mobile{
+    position: relative;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.button{
+    font-size: 2rem;
+    display: flex;
+    background-color: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+   
+}
+
+.button a{
+    color: #254d32;
+}
+
+#mobilelogo{ 
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+}
+
+#desktoplogo{
+    display: none;
+    width: 100%;
+    max-width: 45rem;
+    height: auto;
+    margin: auto;
+}
+
+h3{
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p{
+    font-family: Montserrat;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.hbtn{
+    background-color: #79461d;
+    width: 7rem;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.hbtn a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME PAGE */
+
+.logobox{
+    width: 100%;
+    max-width: 25rem;
+    height: 25rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#homemobile{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: 1000;
+}
+
+#homemobile ul{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    background-color: #254d32;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+}
+
+/* header{
+    width: 100vw;
+    overflow: hidden;
+} */
+
+.logobox p{
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    right: -5rem;
+    top: 3rem;
+}
+
+.heroimage{
+    width: 100%;
+    max-width: 25rem;
+    height: 25rem;
+    background-color: #f8f6f7;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    right: -4rem;
+    top: -3rem;
+    z-index: -100;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 50px;
+}
+
+.hometext{
+    margin: 2.5rem;
+    font-family: Montserrat;
+    font-size: 1rem;
+    position: relative;
+    top: -10rem;
+}
+
+.homebutton{
+    width: 100%;
+    height: 5rem;
+    background-color: #cbcccd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    top: -10rem;
+}
+
+
+/* PROJECT PAGE */
+
+.projectmainbox{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectmainbox img{
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+}
+
+/* ABOUT US PAGE */
+
+.aboutmainbox{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutmainbox img{
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+}
+
+/* VOLUNTEER PAGE */
+
+.volmainbox{
+    display: flex;
+    margin: 4rem;
+    flex-direction: column;
+}
+
+.volimg{
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* CONTACT PAGE */
+
+.contactmainbox{
+    display: flex;
+    /* margin: 4rem; */
+    flex-direction: column;
+}
+
+.ctnimg{
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input{
+    width: 21rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    width: 21rem;
+    height: 10rem;
+}
+
+/* FOOTER STYLES */
+
+footer{
+    background-color: #cbcccd;
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext{
+    font-family: Montserrat;
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width: 480px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop ul {
+        display: flex;
+    }
+
+    #mobilelogo{
+        display: none;
+    }
+
+    #desktoplogo{
+        display: block;
+    }
+
+
+    /* LOGO AND NAVBAR */
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop{
+        width: 100%;
+        background-color: #254d32;
+    }
+
+    /* HOME PAGE */
+
+    .logobox{
+        width: 70vw;
+        max-width: 50rem;
+        height: 25rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-bottom-right-radius: 50px;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+
+    .logobox img{
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+    }
+
+    .logobox p{
+        position: relative;
+        top: 7rem;
+    }
+
+    #homedesktop{
+        position: absolute;
+        top: 10rem;
+        z-index: 100;
+    }
+
+    .heroimage{
+        width: 70vw;
+        max-width: 55rem;
+        height: auto;
+        position: relative;
+        right: -38.5rem;
+        top: -28rem;
+        z-index: -1000;
+    }
+
+    .hometext{
+        width:45vw;
+        max-width: 20rem;
+        height: auto;
+        border: 1px solid;
+        border-radius: 20px;
+        position: relative;
+        top: -40rem;
+        right: -6rem;
+    }
+
+    .homebutton{
+        position: relative;
+        top: -40rem;
+    }
+
+    .main{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* PROJECTS PAGE */
+
+    .projectmainbox{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .countriesflex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; 
+        gap: 2rem;
+    }
+
+    .countriesflex img{
+        width: 100%;
+        max-width: 28rem;
+        height: auto;
+    }
+
+    /* ABOUT US PAGE */
+
+    .aboutmainbox{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .photos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photoflex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .photos img{
+        max-width: 28rem;
+    }
+
+    /* VOLUNTEER PAGE */
+
+    .volmainbox{
+        display: flex;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .volimg{
+        width: 100%;
+        max-width: 100rem;
+        height: auto;
+    }
+
+    .volunteertext{
+        margin-left: 2rem;
+    }
+
+    .volunteertext button{
+        margin-left: 1rem;
+    }
+
+    /* CONTACT US PAGE */
+
+    .contactmainbox{
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctnimg{
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+    }
+
+    form{
+        padding-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    form div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    form div input{
+        width: auto;
+        height: auto;
+        margin: 1rem;
+    }
+
+    #cbtn{
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    input[type=text]{
+        border-radius: 4px;
+        border: 1px solid #cbcccd;
+    }
+}
